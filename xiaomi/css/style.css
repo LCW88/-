@@ -650,6 +650,7 @@ body{
     right: 0;
     bottom: 70px;
     width: 82px;
+    z-index: 100;
 }
 .page-slider li{
     height: 92px;

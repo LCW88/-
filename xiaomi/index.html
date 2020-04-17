@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="font/iconfont.css">
     <!-- 标题图标 -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <script src="./js/index.js"></script>
 </head>
 <body>
     <!--  顶部 S -->
@@ -670,18 +671,20 @@
     <!-- 轮播导航S -->
     <div class="idx-banner container">
         <ul class="banner-list">
-            <li><img src="./img/banner2.jpg" alt=""><a href=""></a></li>
-            <li><img src="./img/banner3.webp" alt=""><a href=""></a></li>
-            <li><img src="./img/banner3.webp" alt=""><a href=""></a></li>
-            <li><img src="./img/banner4.webp" alt=""><a href=""></a></li>
+            <li class="item active" id="item"><img src="./img/banner1.webp" alt=""><a href=""></a>0</li>
+            <li class="item"><img src="./img/banner2.jpg" alt=""><a href=""></a>1</li>
+            <li class="item"><img src="./img/banner3.webp" alt=""><a href=""></a>2</li>
+            <li class="item"><img src="./img/banner4.webp" alt=""><a href=""></a>3</li>
+            <li class="item"><img src="./img/banner5.jpg" alt=""><a href=""></a>4</li>
         </ul>
-        <a href="" class="btn prev"></a>
-        <a href="" class="btn next"></a>
+        <button type="button" class="btn prev" id="goPrev"></button>
+        <button type="button" class="btn next" id="goNext"></button>
         <div class="page">
-            <a href=""><span>1</span></a>
-            <a href=""><span>2</span></a>
-            <a href=""><span>3</span></a>
-            <a href=""><span>4</span></a>
+            <a class="point active" data-index = '0'><span>1</span></a>
+            <a class="point" data-index = '1'><span>2</span></a>
+            <a class="point" data-index = '2'><span>3</span></a>
+            <a class="point" data-index = '3'><span>4</span></a>
+            <a class="point" data-index = '4'><span>5</span></a>
         </div>
     </div>
     <!-- 轮播导航E -->
@@ -781,8 +784,8 @@
             <div class="idx-title">
                 <span class="tit">家电</span>
                 <ul class="list">
-                    <li class="avtive"><a href="">热门</a></li>
-                    <li><a href="">电视音影</a></li>
+                    <li class="tab-active" data-index="theone"><a>热门</a></li>
+                    <li data-index="thetwo"><a>电视音影</a></li>
                 </ul>
             </div>
             <div class="idx-phone idx-box box-centent">
@@ -794,7 +797,7 @@
                         <img src="./img/sil2.webp.jpg" alt="">
                     </a>
                 </div>
-                <div class="good-box">
+                <div class="good-box bottom theone" style="display: block;">
                     <div class="col-5 good-item">
                         <span class="tags new">新品</span>
                         <a href="" class="pic"><img src="./img/good1.webp.jpg" alt=""></a>
@@ -867,7 +870,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="good-box">
+                <div class="good-box thetwo" style="display: none;">
                     <div class="col-5 good-item">
                         <span class="tags new">新品</span>
                         <a href="" class="pic"><img src="./img/good1.webp.jpg" alt=""></a>
@@ -922,7 +925,7 @@
                         <h4 class="desc">120Hz流速屏，全速热爱</h4>
                         <p class="price"><span>2599元<i>2299元</i></span></p>
                     </div>
-                </div> -->
+                </div> 
             </div>
             <div class="idx-adv">
                 <a href=""><img src="./img/guanggaotu3.webp.jpg" alt=""></a>
