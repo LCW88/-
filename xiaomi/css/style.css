@@ -86,6 +86,7 @@ body{
     background-color: #424242;
     float: right;
     height: 38px;   
+    z-index: 101;
 }
 .page-top .top-rt a:hover{
     color: #fff;
