@@ -36,6 +36,7 @@ window.onload = function(){
         }else{
             index=0;
         }
+        time = 0;
         goIndex();
     }
     
@@ -46,6 +47,7 @@ window.onload = function(){
         }else{
             index--;
         }
+        time = 0;
         goIndex();
     }
 

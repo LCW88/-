@@ -1,4 +1,4 @@
-/* 顶部代码 */
+﻿/* 顶部代码 */
 body{
     font-size: 12px;
     color: #333;
@@ -43,7 +43,7 @@ body{
     background: rgb(255, 255, 255); 
     text-align: center;
     display: none;
-    z-index: 1;
+    z-index: 11;
 }
 .page-top .top-lt .down-box img{
     width: 88px;
